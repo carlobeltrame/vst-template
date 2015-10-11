@@ -4,6 +4,12 @@
 *.ipch
 *.lastbuildstate
 *.log
+*.manifest
+*.obj
+*.pch
+*.pdb
+*.res
+*.tlog
 *.sdf
 *.opensdf
 *.zip
