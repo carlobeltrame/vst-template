@@ -1,3 +1,3 @@
 # vst-template
 
-A template for VST plugins using IPlug.
+A template for VST plugins using WDL-OL.
