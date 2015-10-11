@@ -48,7 +48,7 @@ void PluginTemplate::ProcessDoubleReplacing(double** inputs, double** outputs, i
     double* in = inputs[channel];
     double* out = outputs[channel];
 
-    for (int s = 0; y < nFrames; ++s, ++in, ++out) {
+    for (int s = 0; s < nFrames; ++s, ++in, ++out) {
       *out = *in * gain_;
     }
   }
