@@ -1,4 +1,9 @@
+*.aps
 *.exe
+*.idb
+*.ipch
+*.lastbuildstate
+*.log
 *.sdf
 *.opensdf
 *.zip
