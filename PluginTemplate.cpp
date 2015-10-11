@@ -20,7 +20,7 @@ enum ELayout {
 };
 
 PluginTemplate::PluginTemplate(IPlugInstanceInfo instanceInfo)
-  :	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), gain_(1.) {
+  :	IPLUG_CTOR(kNumParams, kNumPrograms, instanceInfo), numChannels_(PLUG_CHANNELS), gain_(1.) {
 
   //arguments are: name, defaultVal, minVal, maxVal, step, label
   GetParam(kGain)->InitDouble("Gain", 50., 0., 100.0, 0.01, "%");
@@ -44,15 +44,13 @@ PluginTemplate::~PluginTemplate() {}
 void PluginTemplate::ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames) {
   // Mutex is already locked for us.
 
-  double* in1 = inputs[0];
-  double* in2 = inputs[1];
-  double* out1 = outputs[0];
-  double* out2 = outputs[1];
+  for (int channel = 0; channel < numChannels_; ++channel) {
+    double* in = inputs[channel];
+    double* out = outputs[channel];
 
-  for (int s = 0; s < nFrames; ++s, ++in1, ++in2, ++out1, ++out2)
-  {
-    *out1 = *in1 * gain_;
-    *out2 = *in2 * gain_;
+    for (int s = 0; y < nFrames; ++s, ++in, ++out) {
+      *out = *in * gain_;
+    }
   }
 }
 

@@ -14,6 +14,7 @@ public:
   void ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames);
 
 private:
+  int numChannels_;
   double gain_;
 };
 

@@ -43,6 +43,7 @@
 instrument determined by PLUG _IS _INST
 */
 
+#define PLUG_CHANNELS (2)
 #define PLUG_CHANNEL_IO "1-1 2-2"
 
 #define PLUG_LATENCY 0
