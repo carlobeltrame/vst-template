@@ -339,6 +339,9 @@ copy /Y "$(TargetPath)".rsr "$(RTAS_PLUGINS_PATH)\$(BINARY_NAME).dpm.rsr"
       <Project>{d2ce28ff-63b8-48bc-936d-33f365b4053f}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\CBCommon\CBCommon.vcxproj">
+      <Project>{4a6e3965-3cd7-4d54-b036-c2cba432b3a8}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
