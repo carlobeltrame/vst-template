@@ -29,6 +29,8 @@
 build-*
 ipch/*
 gui/*
+x64/*
+Debug/*
 
 Icon?
 .DS_Stor*

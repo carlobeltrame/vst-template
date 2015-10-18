@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PluginTemplate-app", "PluginTemplate-app.vcxproj", "{41785AE4-5B70-4A75-880B-4B418B4E13C6}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -46,6 +46,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PluginTemplate-rtas", "Plug
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlugInLib", "..\..\PT9_SDK\AlturaPorts\TDMPlugIns\PlugInLibrary\WinBuild\PlugInLib.vcxproj", "{D2CE28FF-63B8-48BC-936D-33F365B4053F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CBCommon", "..\CBCommon\CBCommon.vcxproj", "{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,18 @@ Global
 		{D2CE28FF-63B8-48BC-936D-33F365B4053F}.Tracer|Win32.ActiveCfg = Release|Win32
 		{D2CE28FF-63B8-48BC-936D-33F365B4053F}.Tracer|Win32.Build.0 = Release|Win32
 		{D2CE28FF-63B8-48BC-936D-33F365B4053F}.Tracer|x64.ActiveCfg = Release|Win32
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Debug|Win32.Build.0 = Debug|Win32
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Debug|x64.ActiveCfg = Debug|x64
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Debug|x64.Build.0 = Debug|x64
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Release|Win32.ActiveCfg = Release|Win32
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Release|Win32.Build.0 = Release|Win32
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Release|x64.ActiveCfg = Release|x64
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Release|x64.Build.0 = Release|x64
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Tracer|Win32.ActiveCfg = Release|Win32
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Tracer|Win32.Build.0 = Release|Win32
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Tracer|x64.ActiveCfg = Release|x64
+		{4A6E3965-3CD7-4D54-B036-C2CBA432B3A8}.Tracer|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
